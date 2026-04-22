@@ -424,7 +424,7 @@ def cli():
     run_parser.add_argument(
         "--timeout",
         type=int,
-        default=None,
+        default=300,
         help="Timeout in seconds for each solution evaluation (default: 300)",
     )
     run_parser.add_argument(

@@ -156,8 +156,8 @@ class TorchBuilder(Builder):
                 sources=cpp_cuda_paths,
                 extra_include_paths=extra_include_paths,
                 ##############################
-                extra_cflags=['-std=c++20'],          # <--- 添加这行 (针对 C++)
-                extra_cuda_cflags=['-std=c++20'],     # <--- 添加这行 (针对 CUDA)                
+                extra_cflags=['-std=c++20', '-O3'],           # 针对 C++ 开启 O3
+                extra_cuda_cflags=['-std=c++20', '-O3'],      # 针对 CUDA 开启 O3             
                 ##############################
                 extra_ldflags=extra_ldflags,
                 with_cuda=with_cuda,

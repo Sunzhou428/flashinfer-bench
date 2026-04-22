@@ -399,7 +399,6 @@ def cli():
     )
     run_parser.add_argument(
         "--use-isolated-runner",
-        action="store_true",
         default=True,
         help="Use IsolatedRunner instead of the default PersistentRunner",
     )

@@ -155,6 +155,10 @@ class TorchBuilder(Builder):
                 name=package_name,
                 sources=cpp_cuda_paths,
                 extra_include_paths=extra_include_paths,
+                ##############################
+                extra_cflags=['-std=c++20'],          # <--- 添加这行 (针对 C++)
+                extra_cuda_cflags=['-std=c++20'],     # <--- 添加这行 (针对 CUDA)                
+                ##############################
                 extra_ldflags=extra_ldflags,
                 with_cuda=with_cuda,
                 build_directory=build_dir,

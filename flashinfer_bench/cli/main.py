@@ -363,7 +363,7 @@ def cli():
     serve_parser.add_argument("--num-trials", type=int, default=3)
     serve_parser.add_argument("--rtol", type=float, default=1e-2)
     serve_parser.add_argument("--atol", type=float, default=1e-2)
-    serve_parser.add_argument("--timeout", type=int, default=300)
+    serve_parser.add_argument("--timeout", type=int, default=50)
     serve_parser.add_argument(
         "--log-level", default="INFO", choices=["DEBUG", "INFO", "WARNING", "ERROR"]
     )

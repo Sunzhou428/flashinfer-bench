@@ -400,7 +400,7 @@ def cli():
     run_parser.add_argument(
         "--use-isolated-runner",
         action="store_true",
-        default=None,
+        default=True,
         help="Use IsolatedRunner instead of the default PersistentRunner",
     )
     run_parser.add_argument("--save-results", action=argparse.BooleanOptionalAction, default=True)
